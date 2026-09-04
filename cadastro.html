@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAG Oficinas - Cadastro</title>
+    <link rel="stylesheet" href="styles/styles/cadastro.css">
+    <script src="js/cadastro.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-brand">
+                <img src="img/Logo.png" alt="Logo AAG Oficinas">
+            </div>
+            <div class="header-nav">
+                <a href="index.html">
+                    <img src="" alt="Seta para esquerda">
+                    Voltar para o login
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="cadastro">
+            <div class="container">
+                <div class="cadastro-card">
+                    <div class="card-header">
+                        <img src="" alt="Ícone de usuário com mais">
+                        <h1>Crie sua conta na <span>AAG</span></h1>
+                        <div class="divider"></div>
+                        <p>Cadastre-se para acompanhar seus serviços e manter as informações do seu veículo organizadas
+                            e sempre à mão.</p>
+                    </div>
+
+                    <form class="cadastro-form">
+                        <div class="form-group">
+                            <label for="nome">Nome completo</label>
+                            <div class="input-wrapper">
+                                <img src="" alt="Ícone de nome">
+                                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo"
+                                    autocomplete="name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <div class="input-wrapper">
+                                <img src="" alt="Ícone de e-mail">
+                                <input type="email" id="email" name="email" placeholder="Digite seu e-mail"
+                                    autocomplete="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <div class="input-wrapper">
+                                <img src="" alt="Ícone de telefone">
+                                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999"
+                                    autocomplete="tel" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="senha">Senha</label>
+                            <div class="input-wrapper">
+                                <img src="" alt="Ícone de senha">
+                                <input type="password" id="senha" name="senha" placeholder="Crie uma senha"
+                                    autocomplete="new-password" required>
+                                <button type="button" aria-label="Mostrar ou ocultar senha">
+                                    <img src="" alt="Ícone de olho">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmar-senha">Confirmar senha</label>
+                            <div class="input-wrapper">
+                                <img src="" alt="Ícone de confirmar senha">
+                                <input type="password" id="confirmar-senha" name="confirmar-senha"
+                                    placeholder="Confirme sua senha" autocomplete="new-password" required>
+                                <button type="button" aria-label="Mostrar ou ocultar senha">
+                                    <img src="" alt="Ícone de olho">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="password-requirements">
+                            <p>Sua senha deve conter:</p>
+                            <ul>
+                                <li class="valid">Mínimo de 8 caracteres</li>
+                                <li class="valid">Letra maiúscula e minúscula</li>
+                                <li class="valid">Número</li>
+                                <li class="valid">Caractere especial (ex.: @ # $ %)</li>
+                            </ul>
+                        </div>
+
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="termos" name="termos" required>
+                            <label for="termos">Li e concordo com os <a href="#">termos de uso</a> e <a
+                                    href="#">política de privacidade</a>.</label>
+                        </div>
+
+                        <button type="submit">
+                            <img src="" alt="Ícone de usuário">
+                            Criar minha conta
+                        </button>
+
+                        <div class="login-prompt">
+                            <p>Já possui uma conta? <a href="index.html">Entrar</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <img src="img/van.png" alt="Ícone de oficina móvel">
+                        <h3>Oficina móvel</h3>
+                        <p>Vamos até você, onde seu carro estiver.</p>
+                    </article>
+                    <article class="feature-card">
+                        <img src="img/aag_icone_seguranca.png" alt="Ícone de segurança">
+                        <h3>Segurança</h3>
+                        <p>Serviços com qualidade e profissionais capacitados.</p>
+                    </article>
+                    <article class="feature-card">
+                        <img src="img/aag_icone_praticidade.png" alt="Ícone de praticidade">
+                        <h3>Praticidade</h3>
+                        <p>Soluções rápidas para o seu dia a dia.</p>
+                    </article>
+                    <article class="feature-card">
+                        <img src="img/aag_icone_suporte.png" alt="Ícone de confiança">
+                        <h3>Confiança</h3>
+                        <p>Transparência e compromisso com o seu veículo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">
+                <img src="img/Logo.png" alt="Logo AAG Oficinas">
+                <div class="divider"></div>
+                <p>Seu carro cuidado onde você estiver.</p>
+                <p>&copy; 2026 AAG Oficinas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

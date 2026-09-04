@@ -1,0 +1,431 @@
+@import url(../global.css);
+
+body {
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    font-family: Inter, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #0A0A0A;
+    padding: 20px 0;
+    border-bottom: 1px solid #FF6B00;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-brand img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.header-nav a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.header-nav a img {
+    height: 16px;
+    width: 16px;
+    object-fit: contain;
+}
+
+.header-nav a:hover {
+    color: #FF6B00;
+}
+
+.main {
+    padding: 60px 0;
+    background-color: #0A0A0A;
+}
+
+.cadastro {
+    margin-bottom: 60px;
+}
+
+.cadastro-card {
+    background-color: #111111;
+    border: 1px solid #2A2A2A;
+    border-radius: 16px;
+    padding: 48px;
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.card-header img {
+    height: 48px;
+    width: 48px;
+    object-fit: contain;
+    margin-bottom: 16px;
+}
+
+.card-header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0 0 12px 0;
+}
+
+.card-header h1 span {
+    color: #FF6B00;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: #FF6B00;
+    margin: 0 auto 16px auto;
+    border-radius: 2px;
+}
+
+.card-header p {
+    font-size: 14px;
+    color: #B8B8B8;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper img {
+    position: absolute;
+    left: 16px;
+    height: 18px;
+    width: 18px;
+    object-fit: contain;
+}
+
+.input-wrapper input {
+    width: 100%;
+    background-color: #181818;
+    border: 1px solid #2A2A2A;
+    border-radius: 8px;
+    padding: 14px 16px 14px 48px;
+    color: #FFFFFF;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+}
+
+.input-wrapper input:focus {
+    border-color: #FF6B00;
+    box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.15);
+}
+
+.input-wrapper input::placeholder {
+    color: #777777;
+}
+
+.input-wrapper button {
+    position: absolute;
+    right: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper button img {
+    position: static;
+    height: 18px;
+    width: 18px;
+}
+
+.password-requirements {
+    background-color: #181818;
+    border: 1px solid #2A2A2A;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: -4px;
+}
+
+.password-requirements p {
+    font-size: 12px;
+    color: #B8B8B8;
+    margin: 0 0 10px 0;
+    font-weight: 500;
+}
+
+.password-requirements ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.password-requirements li {
+    font-size: 12px;
+    color: #777777;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.password-requirements li.valid {
+    color: #22C55E;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.form-checkbox input[type="checkbox"] {
+    accent-color: #FF6B00;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.form-checkbox label {
+    font-size: 13px;
+    color: #B8B8B8;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.form-checkbox label a {
+    color: #FF6B00;
+    text-decoration: none;
+}
+
+.form-checkbox label a:hover {
+    text-decoration: underline;
+}
+
+.cadastro-form button[type="submit"] {
+    background-color: #FF6B00;
+    color: #0A0A0A;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.cadastro-form button[type="submit"] img {
+    height: 18px;
+    width: 18px;
+    object-fit: contain;
+}
+
+.cadastro-form button[type="submit"]:hover {
+    background-color: #FF8500;
+}
+
+.cadastro-form button[type="submit"]:active {
+    transform: scale(0.99);
+}
+
+.login-prompt {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.login-prompt p {
+    font-size: 14px;
+    color: #B8B8B8;
+    margin: 0;
+}
+
+.login-prompt a {
+    color: #FF6B00;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.login-prompt a:hover {
+    text-decoration: underline;
+}
+
+.features {
+    padding: 20px 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background-color: #111111;
+    border: 1px solid #2A2A2A;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.feature-card {
+    background-color: #181818;
+    border: 1px solid #2A2A2A;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.feature-card img {
+    height: 28px;
+    width: 28px;
+    object-fit: contain;
+}
+
+.feature-card h3 {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0;
+    font-weight: 600;
+}
+
+.feature-card p {
+    font-size: 13px;
+    color: #B8B8B8;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.footer {
+    background-color: #050505;
+    padding: 40px 0;
+    border-top: 1px solid #2A2A2A;
+    text-align: center;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-brand img {
+    height: 36px;
+    width: auto;
+    object-fit: contain;
+}
+
+.footer-brand .divider {
+    width: 40px;
+    height: 2px;
+    background-color: #FF6B00;
+    margin: 4px 0;
+    border-radius: 1px;
+}
+
+.footer-brand p {
+    font-size: 13px;
+    color: #B8B8B8;
+    margin: 0;
+}
+
+.footer-brand p:last-child {
+    color: #777777;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+@media (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cadastro-card {
+        padding: 32px 20px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header .container {
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cadastro-card {
+        padding: 24px 16px;
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .features-grid {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .feature-card {
+        background-color: #111111;
+    }
+}
