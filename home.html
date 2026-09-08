@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AAG Oficinas - Oficina Mecânica Móvel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles/styles/home.css">
     <script src="js/home.js" defer></script>
 </head>
@@ -13,24 +14,22 @@
     <header class="header">
         <div class="container">
             <div class="header-brand">
-                <a href="index.html">
-                    <img src="img/Logo.png" alt="AAG Oficinas">
-                </a>
+                <img src="img/Logo.png" alt="AAG Oficinas">
             </div>
             <nav class="header-nav">
                 <ul>
-                    <li><a href="index.html" class="active">Início</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="personalizacao.html">Personalização</a></li>
-                    <li><a href="servicos.html">AAG SmartCare</a></li>
-                    <li><a href="sobre.html">Sobre nós</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li>Início</li>
+                    <li>Serviços</li>
+                    <li>Personalização</li>
+                    <li>AAG SmartCare</li>
+                    <li>Sobre nós</li>
+                    <li></li>
                 </ul>
             </nav>
             <div class="header-action">
-                <a href="login.html" class="btn-login">
-                    <img src="" alt="Ícone de usuário">
-                    Entrar
+                <a href="index.html" class="btn-login">
+                    <i class="fa-solid fa-user" aria-hidden="true"></i>
+                    Voltar ao login
                 </a>
             </div>
         </div>
@@ -41,35 +40,34 @@
             <div class="container">
                 <div class="hero-content">
                     <h1>Seu carro cuidado <span>onde você estiver.</span></h1>
-                    <p>A AAG Oficinas é uma oficina móvel que leva serviços automotivos completos até você, com
-                        praticidade, tecnologia e profissionais qualificados para cuidar do seu veículo.</p>
+                    <p>A AAG Oficinas é uma oficina móvel que leva serviços automotivos completos até você, com praticidade, tecnologia e profissionais qualificados para cuidar do seu veículo.</p>
                     <div class="hero-buttons">
                         <a href="contato.html" class="btn-primary">
-                            <img src="" alt="Ícone de agendamento">
+                            <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
                             Agendar um serviço
                         </a>
                         <a href="sobre.html" class="btn-secondary">
-                            <img src="" alt="Ícone de info">
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
                             Conheça a AAG
                         </a>
                     </div>
                     <div class="hero-features">
                         <div class="hero-feature-item">
-                            <img src="" alt="Ícone atendimento">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                             <div>
                                 <h3>Atendimento no local</h3>
                                 <p>Vamos até você.</p>
                             </div>
                         </div>
                         <div class="hero-feature-item">
-                            <img src="" alt="Ícone profissionais">
+                            <i class="fa-solid fa-user-gear" aria-hidden="true"></i>
                             <div>
                                 <h3>Profissionais especializados</h3>
                                 <p>Serviço especializado.</p>
                             </div>
                         </div>
                         <div class="hero-feature-item">
-                            <img src="" alt="Ícone rapidez">
+                            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
                             <div>
                                 <h3>Rapidez e segurança</h3>
                                 <p>Agilidade e confiança.</p>
@@ -83,6 +81,22 @@
             </div>
         </section>
 
+        <section class="van-showcase">
+            <div class="container">
+                <div class="van-content">
+                    <h2>Conheça a nossa van <span>oficina móvel</span></h2>
+                    <p>Nossa estrutura móvel é equipada com tecnologia de ponta, ferramentas de alta precisão e tudo o que é necessário para realizar manutenções completas diretamente no seu endereço, com total segurança e comodidade.</p>
+                    <a href="contato.html" class="btn-primary">
+                        <i class="fa-solid fa-van-shuttle" aria-hidden="true"></i>
+                        Agendar atendimento móvel
+                    </a>
+                </div>
+                <div class="van-3d-container">
+                    <!-- Container reservado para o futuro modelo 3D -->
+                </div>
+            </div>
+        </section>
+
         <section class="how-it-works">
             <div class="container">
                 <h2>Como a <span>AAG</span> funciona?</h2>
@@ -90,7 +104,7 @@
                     <article class="step-card">
                         <div class="step-header">
                             <span class="step-number">1</span>
-                            <img src="" alt="Ícone etapa 1">
+                            <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
                         </div>
                         <h3>Solicite o serviço</h3>
                         <p>Escolha o serviço que seu veículo precisa.</p>
@@ -98,7 +112,7 @@
                     <article class="step-card">
                         <div class="step-header">
                             <span class="step-number">2</span>
-                            <img src="" alt="Ícone etapa 2">
+                            <i class="fa-solid fa-van-shuttle" aria-hidden="true"></i>
                         </div>
                         <h3>Nós vamos até você</h3>
                         <p>Nossa equipe se desloca até o local combinado.</p>
@@ -106,7 +120,7 @@
                     <article class="step-card">
                         <div class="step-header">
                             <span class="step-number">3</span>
-                            <img src="" alt="Ícone etapa 3">
+                            <i class="fa-solid fa-car-rear" aria-hidden="true"></i>
                         </div>
                         <h3>Seu carro pronto</h3>
                         <p>Realizamos o serviço com praticidade e segurança.</p>
@@ -122,30 +136,30 @@
                     <p class="smartcare-subtitle">Seu carro cuidado antes do problema aparecer.</p>
                     <ul class="smartcare-list">
                         <li>
-                            <img src="" alt="Check">
+                            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                             Histórico do veículo
                         </li>
                         <li>
-                            <img src="" alt="Check">
+                            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                             Próximas manutenções
                         </li>
                         <li>
-                            <img src="" alt="Check">
+                            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                             Lembretes inteligentes
                         </li>
                         <li>
-                            <img src="" alt="Check">
+                            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                             Recomendações personalizadas
                         </li>
                         <li>
-                            <img src="" alt="Check">
+                            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                             Acompanhamento completo
                         </li>
                     </ul>
                     <a href="servicos.html" class="btn-primary">Conheça o SmartCare</a>
                 </div>
                 <div class="smartcare-image">
-                    <img src="" alt="AAG SmartCare">
+                    <img src="img/aagsmartcare.png" alt="AAG SmartCare">
                 </div>
             </div>
         </section>
@@ -158,60 +172,60 @@
                 </div>
                 <div class="services-grid">
                     <article class="service-card">
-                        <img src="" alt="Diagnóstico Eletrônico">
+                        <img src="img/Diagnostico.jpeg" alt="Diagnóstico Eletrônico">
                         <div class="service-content-wrapper">
                             <div class="service-icon">
-                                <img src="" alt="Ícone">
+                                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
                             </div>
                             <h3>Diagnóstico Eletrônico</h3>
                             <p>Scanner e injeção eletrônica.</p>
                         </div>
                     </article>
                     <article class="service-card">
-                        <img src="" alt="Troca de Bateria">
+                        <img src="img/Trocar-bateria-do-carro.jpg" alt="Troca de Bateria">
                         <div class="service-content-wrapper">
                             <div class="service-icon">
-                                <img src="" alt="Ícone">
+                                <i class="fa-solid fa-car-battery" aria-hidden="true"></i>
                             </div>
                             <h3>Troca de Bateria</h3>
                             <p>Com teste do alternador.</p>
                         </div>
                     </article>
                     <article class="service-card">
-                        <img src="" alt="Manutenção de Freios">
+                        <img src="img/troca de freios.jpeg" alt="Manutenção de Freios">
                         <div class="service-content-wrapper">
                             <div class="service-icon">
-                                <img src="" alt="Ícone">
+                                <i class="fa-solid fa-compact-disc" aria-hidden="true"></i>
                             </div>
                             <h3>Manutenção de Freios</h3>
                             <p>Pastilhas e discos.</p>
                         </div>
                     </article>
                     <article class="service-card">
-                        <img src="" alt="Troca de Óleo e Filtros">
+                        <img src="img/troca de oleo.jpeg" alt="Troca de Óleo e Filtros">
                         <div class="service-content-wrapper">
                             <div class="service-icon">
-                                <img src="" alt="Ícone">
+                                <i class="fa-solid fa-oil-can" aria-hidden="true"></i>
                             </div>
                             <h3>Troca de Óleo e Filtros</h3>
                             <p>Óleo do motor e filtros.</p>
                         </div>
                     </article>
                     <article class="service-card">
-                        <img src="" alt="Reparos Especiais">
+                        <img src="img/bobina-de-ignicao-do-veiculo.webp" alt="Reparos Especiais">
                         <div class="service-content-wrapper">
                             <div class="service-icon">
-                                <img src="" alt="Ícone">
+                                <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
                             </div>
-                            <h3>Reparos Especiais</h3>
+                            <h3>Reparos na ignição </h3>
                             <p>Ignição e partida do veículo.</p>
                         </div>
                     </article>
                     <article class="service-card">
-                        <img src="" alt="Correção de Erros no Painel">
+                        <img src="img/eletronic-power-control-01-2017-1.webp" alt="Correção de Erros no Painel">
                         <div class="service-content-wrapper">
                             <div class="service-icon">
-                                <img src="" alt="Ícone">
+                                <i class="fa-solid fa-gauge-high" aria-hidden="true"></i>
                             </div>
                             <h3>Correção de Erros no Painel</h3>
                             <p>Leitura e correção via scanner.</p>
@@ -227,40 +241,58 @@
                     <h2>Personalização de <span>veículos</span></h2>
                     <a href="personalizacao.html" class="link-all">Ver opções</a>
                 </div>
+                <div class="personalization-note">
+                    <h3> Aviso: Os serviços de personalização exigem agendamento prévio para planejamento e seleção de materiais.</h3>
+                </div>
                 <div class="personalization-grid">
                     <article class="personalization-card">
-                        <img src="" alt="Envelopamento">
+                        <img src="img/envelopamento-automotivo-rio-de-janeiro-rikinfilm_0000s_0000_1-400x400.jpg" alt="Envelopamento">
                         <div class="personalization-info">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-palette" aria-hidden="true"></i>
+                            </div>
                             <h3>Envelopamento</h3>
                             <p>Proteção e estilo único.</p>
                         </div>
                     </article>
                     <article class="personalization-card">
-                        <img src="" alt="Películas">
+                        <img src="img/remap.jpeg" alt="remap">
                         <div class="personalization-info">
-                            <h3>Películas</h3>
-                            <p>Mais privacidade e conforto.</p>
+                            <div class="service-icon">
+                                <i class="fa-solid fa-glasses" aria-hidden="true"></i>
+                            </div>
+                            <h3>Remap</h3>
+                            <p>Mais potencia e diversão</p>
                         </div>
                     </article>
                     <article class="personalization-card">
-                        <img src="" alt="Rodas e Pneus">
+                        <img src="img/rodas.jpeg" alt="Rodas e Pneus">
                         <div class="personalization-info">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-dharmachakra" aria-hidden="true"></i>
+                            </div>
                             <h3>Rodas e Pneus</h3>
                             <p>Design e performance.</p>
                         </div>
                     </article>
                     <article class="personalization-card">
-                        <img src="" alt="Iluminação em LED">
+                        <img src="img/neon.jpg" alt="Iluminação em neon">
                         <div class="personalization-info">
-                            <h3>Iluminação em LED</h3>
-                            <p>Mais estilo e segurança.</p>
+                            <div class="service-icon">
+                                <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+                            </div>
+                            <h3>Neon em baixo do veiculo</h3>
+                            <p>Mais estilo e presença</p>
                         </div>
                     </article>
                     <article class="personalization-card">
-                        <img src="" alt="Acessórios">
+                        <img src="img/escapamento.jpeg" alt="Acessórios">
                         <div class="personalization-info">
-                            <h3>Acessórios</h3>
-                            <p>Personalize do seu jeito.</p>
+                            <div class="service-icon">
+                                <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+                            </div>
+                            <h3>Escapamento</h3>
+                            <p>Personalize o som e o estilo do seu veículo.</p>
                         </div>
                     </article>
                 </div>
@@ -272,22 +304,21 @@
                 <h2>Conheça os fundadores</h2>
                 <div class="founders-grid">
                     <article class="founder-card">
-                        <img src="" alt="Anderson Ferreira">
+                        <img src="img/IMG-20260908-WA0051.jpg" alt="Anderson Ferreira">
                         <h3>ANDERSON FERREIRA</h3>
                         <span class="founder-role">Responsável pela Mídia</span>
-                        <p>Responsável pela presença digital da AAG. Cuida do Instagram, site, comunicação e divulgação
-                            da empresa.</p>
+                        <p>Responsável pela presença digital da AAG. Cuida do Instagram, site, comunicação e divulgação da empresa.</p>
                         <div class="founder-tags">
                             <span>
-                                <img src="" alt="Ícone">
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                                 Instagram
                             </span>
                             <span>
-                                <img src="" alt="Ícone">
+                                <i class="fa-solid fa-globe" aria-hidden="true"></i>
                                 Site
                             </span>
                             <span>
-                                <img src="" alt="Ícone">
+                                <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
                                 Mídia
                             </span>
                         </div>
@@ -299,36 +330,35 @@
                         <p>Responsável pelos consertos e reparos dos veículos no local onde o cliente estiver.</p>
                         <div class="founder-tags">
                             <span>
-                                <img src="" alt="Ícone">
+                                <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
                                 Manutenção
                             </span>
                             <span>
-                                <img src="" alt="Ícone">
+                                <i class="fa-solid fa-gears" aria-hidden="true"></i>
                                 Reparos
                             </span>
                             <span>
-                                <img src="" alt="Ícone">
+                                <i class="fa-solid fa-headset" aria-hidden="true"></i>
                                 Atendimento
                             </span>
                         </div>
                     </article>
                     <article class="founder-card">
-                        <img src="" alt="Guilherme Silva">
+                        <img src="img/IMG-20260908-WA0052.jpg" alt="Guilherme Silva">
                         <h3>GUILHERME SILVA</h3>
                         <span class="founder-role">Responsável pela Van</span>
-                        <p>Responsável pela van da AAG e por tudo que envolve a logística, equipamentos e deslocamento.
-                        </p>
+                        <p>Responsável pela van da AAG e por tudo que envolve a logística, equipamentos e deslocamento.</p>
                         <div class="founder-tags">
                             <span>
-                                <img src="" alt="Ícone">
+                                <i class="fa-solid fa-van-shuttle" aria-hidden="true"></i>
                                 Van
                             </span>
                             <span>
-                                <img src="" alt="Ícone">
+                                <i class="fa-solid fa-route" aria-hidden="true"></i>
                                 Logística
                             </span>
                             <span>
-                                <img src="" alt="Ícone">
+                                <i class="fa-solid fa-toolbox" aria-hidden="true"></i>
                                 Equipamentos
                             </span>
                         </div>
@@ -342,26 +372,37 @@
                 <h2>Por que escolher a AAG?</h2>
                 <div class="benefits-grid">
                     <article class="benefit-card">
-                        <img src="" alt="Ícone de Praticidade">
+                        <i class="fa-solid fa-bolt" aria-hidden="true"></i>
                         <h3>Praticidade</h3>
                         <p>Você não precisa perder tempo levando o carro até uma oficina.</p>
                     </article>
                     <article class="benefit-card">
-                        <img src="" alt="Ícone de Atendimento no local">
+                        <i class="fa-solid fa-location-crosshairs" aria-hidden="true"></i>
                         <h3>Atendimento no local</h3>
                         <p>Nossa equipe vai até onde você estiver.</p>
                     </article>
                     <article class="benefit-card">
-                        <img src="" alt="Ícone de Tecnologia">
+                        <i class="fa-solid fa-microchip" aria-hidden="true"></i>
                         <h3>Tecnologia</h3>
                         <p>Soluções digitais para facilitar o acompanhamento do veículo.</p>
                     </article>
                     <article class="benefit-card">
-                        <img src="" alt="Ícone de Confiança">
+                        <i class="fa-solid fa-shield-heart" aria-hidden="true"></i>
                         <h3>Confiança</h3>
                         <p>Serviços pensados para oferecer segurança e qualidade.</p>
                     </article>
                 </div>
+            </div>
+        </section>
+
+        <section class="final-cta">
+            <div class="container">
+                <h2>Precisa de manutenção automotiva com praticidade?</h2>
+                <p>Agende agora mesmo e leve a oficina até o seu veículo.</p>
+                <a href="contato.html" class="btn-primary">
+                    <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+                    Agendar atendimento
+                </a>
             </div>
         </section>
     </main>
@@ -370,7 +411,7 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-col footer-brand-col">
-                    <img src="" alt="Logo AAG Oficinas">
+                    <img src="img/Logo.png" alt="Logo AAG Oficinas">
                     <p>Seu carro cuidado<br>onde você estiver.</p>
                 </div>
                 <div class="footer-col">
@@ -392,15 +433,15 @@
                 <div class="footer-col">
                     <h4>Fale conosco</h4>
                     <p>
-                        <img src="" alt="Ícone e-mail">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                         E-mail: contato@aagoficinas.com.br
                     </p>
                     <p>
-                        <img src="" alt="Ícone telefone">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
                         Telefone: (11) 99999-9999
                     </p>
                     <p>
-                        <img src="" alt="Ícone localização">
+                        <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
                         Atendimento: Em toda São Paulo e região
                     </p>
                 </div>
@@ -418,7 +459,11 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 AAG Oficinas. Todos os direitos reservados.</p>
+                <p>&copy; 2026 AAG Oficinas. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="termos.html">Termos de Uso</a>
+                    <a href="privacidade.html">Política de Privacidade</a>
+                </div>
             </div>
         </div>
     </footer>

@@ -49,15 +49,10 @@ body {
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
-    transition: color 0.2s ease;
 }
 
-.header-nav a:hover,
 .header-nav a.active {
     color: #FFFFFF;
-}
-
-.header-nav a.active {
     position: relative;
 }
 
@@ -83,12 +78,6 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    transition: all 0.2s ease;
-}
-
-.btn-login:hover {
-    background-color: #FF6B00;
-    color: #0A0A0A;
 }
 
 .hero {
@@ -145,12 +134,6 @@ body {
     text-decoration: none;
     font-weight: 700;
     font-size: 15px;
-    transition: all 0.2s ease;
-}
-
-.btn-primary:hover {
-    background-color: #FF8500;
-    transform: translateY(-2px);
 }
 
 .btn-secondary {
@@ -165,12 +148,6 @@ body {
     text-decoration: none;
     font-weight: 700;
     font-size: 15px;
-    transition: all 0.2s ease;
-}
-
-.btn-secondary:hover {
-    background-color: rgba(255, 107, 0, 0.1);
-    transform: translateY(-2px);
 }
 
 .hero-features {
@@ -186,7 +163,10 @@ body {
     gap: 12px;
 }
 
+.hero-feature-item i,
 .hero-feature-item img {
+    font-size: 20px;
+    color: #FF6B00;
     width: 24px;
     height: 24px;
     object-fit: contain;
@@ -217,6 +197,53 @@ body {
     object-fit: contain;
 }
 
+.van-showcase {
+    padding: 80px 0;
+    background-color: #0A0A0A;
+}
+
+.van-showcase .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #181818;
+    border: 1px solid #2A2A2A;
+    border-radius: 24px;
+    padding: 48px;
+}
+
+.van-content {
+    flex: 1;
+}
+
+.van-content h2 {
+    text-align: left;
+    margin: 0 0 16px 0;
+    font-size: 32px;
+}
+
+.van-content h2 span {
+    color: #FF6B00;
+}
+
+.van-content p {
+    font-size: 15px;
+    color: #B8B8B8;
+    margin: 0 0 24px 0;
+    line-height: 1.6;
+}
+
+.van-3d-container {
+    flex: 1;
+    min-height: 350px;
+    background-color: #111111;
+    border: 1px dashed #2A2A2A;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .how-it-works {
     padding: 80px 0;
     background-color: #0A0A0A;
@@ -227,7 +254,8 @@ body {
 .services h2,
 .personalization h2,
 .founders h2,
-.why-choose-us h2 {
+.why-choose-us h2,
+.final-cta h2 {
     font-size: 36px;
     font-weight: 800;
     text-align: center;
@@ -251,12 +279,6 @@ body {
     border-radius: 16px;
     padding: 32px;
     text-align: left;
-    transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.step-card:hover {
-    transform: translateY(-4px);
-    border-color: #FF6B00;
 }
 
 .step-header {
@@ -279,7 +301,10 @@ body {
     border-radius: 50%;
 }
 
+.step-header i,
 .step-header img {
+    font-size: 24px;
+    color: #FF6B00;
     width: 32px;
     height: 32px;
     object-fit: contain;
@@ -349,7 +374,10 @@ body {
     font-size: 15px;
 }
 
+.smartcare-list li i,
 .smartcare-list li img {
+    font-size: 18px;
+    color: #FF6B00;
     width: 20px;
     height: 20px;
     object-fit: contain;
@@ -390,12 +418,6 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 15px;
-    transition: color 0.2s ease;
-}
-
-.link-all:hover {
-    color: #FF8500;
-    text-decoration: underline;
 }
 
 .services-grid {
@@ -409,12 +431,6 @@ body {
     border: 1px solid #2A2A2A;
     border-radius: 16px;
     overflow: hidden;
-    transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-4px);
-    border-color: #FF6B00;
 }
 
 .service-card > img {
@@ -438,7 +454,10 @@ body {
     margin-bottom: 16px;
 }
 
+.service-icon i,
 .service-icon img {
+    font-size: 18px;
+    color: #FF6B00;
     width: 20px;
     height: 20px;
     object-fit: contain;
@@ -462,6 +481,12 @@ body {
     background-color: #0A0A0A;
 }
 
+.personalization-note {
+    margin-bottom: 24px;
+    color: #B8B8B8;
+    font-size: 14px;
+}
+
 .personalization-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -473,12 +498,6 @@ body {
     border: 1px solid #2A2A2A;
     border-radius: 16px;
     overflow: hidden;
-    transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.personalization-card:hover {
-    transform: translateY(-4px);
-    border-color: #FF6B00;
 }
 
 .personalization-card img {
@@ -528,12 +547,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.founder-card:hover {
-    transform: translateY(-4px);
-    border-color: #FF6B00;
 }
 
 .founder-card > img {
@@ -573,6 +586,7 @@ body {
     gap: 8px;
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .founder-tags span {
@@ -587,14 +601,17 @@ body {
     color: #B8B8B8;
 }
 
+.founder-tags span i,
 .founder-tags span img {
+    font-size: 12px;
+    color: #FF6B00;
     width: 14px;
     height: 14px;
     object-fit: contain;
 }
 
 .why-choose-us {
-    padding: 80px 0 100px 0;
+    padding: 80px 0;
     background-color: #0A0A0A;
 }
 
@@ -609,15 +626,12 @@ body {
     border: 1px solid #2A2A2A;
     border-radius: 16px;
     padding: 32px;
-    transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-.benefit-card:hover {
-    transform: translateY(-4px);
-    border-color: #FF6B00;
-}
-
+.benefit-card i,
 .benefit-card img {
+    font-size: 28px;
+    color: #FF6B00;
     width: 36px;
     height: 36px;
     object-fit: contain;
@@ -636,6 +650,18 @@ body {
     color: #B8B8B8;
     margin: 0;
     line-height: 1.5;
+}
+
+.final-cta {
+    padding: 80px 0 100px 0;
+    background: radial-gradient(circle at 50% 50%, #181818 0%, #0A0A0A 80%);
+    text-align: center;
+}
+
+.final-cta p {
+    font-size: 16px;
+    color: #B8B8B8;
+    margin: 0 0 32px 0;
 }
 
 .footer {
@@ -685,11 +711,6 @@ body {
     color: #B8B8B8;
     text-decoration: none;
     font-size: 14px;
-    transition: color 0.2s ease;
-}
-
-.footer-col ul a:hover {
-    color: #FF6B00;
 }
 
 .footer-col p {
@@ -701,7 +722,10 @@ body {
     gap: 8px;
 }
 
+.footer-col p i,
 .footer-col p img {
+    font-size: 14px;
+    color: #FF6B00;
     width: 16px;
     height: 16px;
     object-fit: contain;
@@ -710,13 +734,26 @@ body {
 .footer-bottom {
     border-top: 1px solid #181818;
     padding-top: 24px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer-bottom p {
     color: #777777;
     font-size: 13px;
     margin: 0;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-legal a {
+    color: #777777;
+    font-size: 13px;
+    text-decoration: none;
 }
 
 @media (max-width: 1200px) {
@@ -749,6 +786,9 @@ body {
     .hero-image {
         justify-content: center;
     }
+    .van-showcase .container {
+        flex-direction: column;
+    }
     .smartcare .container {
         flex-direction: column;
     }
@@ -779,6 +819,11 @@ body {
     .footer-top {
         grid-template-columns: 1fr;
         gap: 24px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
     }
 }
 

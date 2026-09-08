@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             submitButton.disabled = false;
             submitButton.textContent = originalText;
             form.submit();
+            window.location.href = 'home.html';
         }, 800);
     });
 });
