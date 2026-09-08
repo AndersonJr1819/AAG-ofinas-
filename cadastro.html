@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AAG Oficinas - Cadastro</title>
     <link rel="stylesheet" href="styles/styles/cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="js/cadastro.js" defer></script>
 </head>
 
@@ -17,7 +18,7 @@
             </div>
             <div class="header-nav">
                 <a href="index.html">
-                    <img src="" alt="Seta para esquerda">
+                    <i class="fa-solid fa-arrow-left"></i>
                     Voltar para o login
                 </a>
             </div>
@@ -29,49 +30,44 @@
             <div class="container">
                 <div class="cadastro-card">
                     <div class="card-header">
-                        <img src="" alt="Ícone de usuário com mais">
+                        <i class="fa-solid fa-user-plus"></i>
                         <h1>Crie sua conta na <span>AAG</span></h1>
                         <div class="divider"></div>
-                        <p>Cadastre-se para acompanhar seus serviços e manter as informações do seu veículo organizadas
-                            e sempre à mão.</p>
+                        <p>Cadastre-se para acompanhar seus serviços e manter as informações do seu veículo organizadas e sempre à mão.</p>
                     </div>
 
                     <form class="cadastro-form">
                         <div class="form-group">
                             <label for="nome">Nome completo</label>
                             <div class="input-wrapper">
-                                <img src="" alt="Ícone de nome">
-                                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo"
-                                    autocomplete="name" required>
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" autocomplete="name" required>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="email">E-mail</label>
                             <div class="input-wrapper">
-                                <img src="" alt="Ícone de e-mail">
-                                <input type="email" id="email" name="email" placeholder="Digite seu e-mail"
-                                    autocomplete="email" required>
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" autocomplete="email" required>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="telefone">Telefone</label>
                             <div class="input-wrapper">
-                                <img src="" alt="Ícone de telefone">
-                                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999"
-                                    autocomplete="tel" required>
+                                <i class="fa-solid fa-phone"></i>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" autocomplete="tel" required>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="senha">Senha</label>
                             <div class="input-wrapper">
-                                <img src="" alt="Ícone de senha">
-                                <input type="password" id="senha" name="senha" placeholder="Crie uma senha"
-                                    autocomplete="new-password" required>
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" id="senha" name="senha" placeholder="Crie uma senha" autocomplete="new-password" required>
                                 <button type="button" aria-label="Mostrar ou ocultar senha">
-                                    <img src="" alt="Ícone de olho">
+                                    <i class="fa-solid fa-eye"></i>
                                 </button>
                             </div>
                         </div>
@@ -79,11 +75,10 @@
                         <div class="form-group">
                             <label for="confirmar-senha">Confirmar senha</label>
                             <div class="input-wrapper">
-                                <img src="" alt="Ícone de confirmar senha">
-                                <input type="password" id="confirmar-senha" name="confirmar-senha"
-                                    placeholder="Confirme sua senha" autocomplete="new-password" required>
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme sua senha" autocomplete="new-password" required>
                                 <button type="button" aria-label="Mostrar ou ocultar senha">
-                                    <img src="" alt="Ícone de olho">
+                                    <i class="fa-solid fa-eye"></i>
                                 </button>
                             </div>
                         </div>
@@ -100,12 +95,11 @@
 
                         <div class="form-checkbox">
                             <input type="checkbox" id="termos" name="termos" required>
-                            <label for="termos">Li e concordo com os <a href="#">termos de uso</a> e <a
-                                    href="#">política de privacidade</a>.</label>
+                            <label for="termos">Li e concordo com os <a href="#">termos de uso</a> e <a href="#">política de privacidade</a>.</label>
                         </div>
 
                         <button type="submit">
-                            <img src="" alt="Ícone de usuário">
+                            <i class="fa-solid fa-user-check"></i>
                             Criar minha conta
                         </button>
 

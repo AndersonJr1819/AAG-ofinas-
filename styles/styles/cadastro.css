@@ -1,8 +1,8 @@
 @import url(../global.css);
 
 body {
-    background-color: #0A0A0A;
-    color: #FFFFFF;
+    background-color: #0a0a0a;
+    color: #ffffff;
     font-family: Inter, Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -18,9 +18,9 @@ body {
 }
 
 .header {
-    background-color: #0A0A0A;
+    background-color: #0a0a0a;
     padding: 20px 0;
-    border-bottom: 1px solid #FF6B00;
+    border-bottom: 1px solid #ff6b00;
 }
 
 .header .container {
@@ -39,11 +39,16 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
     transition: color 0.2s ease;
+}
+
+.header-nav a i {
+    color: #ff6b00;
+    font-size: 14px;
 }
 
 .header-nav a img {
@@ -53,12 +58,12 @@ body {
 }
 
 .header-nav a:hover {
-    color: #FF6B00;
+    color: #ff6b00;
 }
 
 .main {
     padding: 60px 0;
-    background-color: #0A0A0A;
+    background-color: #0a0a0a;
 }
 
 .cadastro {
@@ -67,7 +72,7 @@ body {
 
 .cadastro-card {
     background-color: #111111;
-    border: 1px solid #2A2A2A;
+    border: 1px solid #2a2a2a;
     border-radius: 16px;
     padding: 48px;
     width: 100%;
@@ -82,6 +87,12 @@ body {
     margin-bottom: 32px;
 }
 
+.card-header i {
+    font-size: 32px;
+    color: #ff6b00;
+    margin-bottom: 16px;
+}
+
 .card-header img {
     height: 48px;
     width: 48px;
@@ -92,25 +103,25 @@ body {
 .card-header h1 {
     font-size: 26px;
     font-weight: 700;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 0 0 12px 0;
 }
 
 .card-header h1 span {
-    color: #FF6B00;
+    color: #ff6b00;
 }
 
 .divider {
     width: 60px;
     height: 3px;
-    background-color: #FF6B00;
+    background-color: #ff6b00;
     margin: 0 auto 16px auto;
     border-radius: 2px;
 }
 
 .card-header p {
     font-size: 14px;
-    color: #B8B8B8;
+    color: #b8b8b8;
     line-height: 1.5;
     margin: 0;
     padding: 0 20px;
@@ -130,7 +141,7 @@ body {
 
 .form-group label {
     font-size: 14px;
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: 500;
 }
 
@@ -138,6 +149,14 @@ body {
     position: relative;
     display: flex;
     align-items: center;
+}
+
+.input-wrapper i:not(.fa-eye):not(.fa-eye-slash) {
+    position: absolute;
+    left: 16px;
+    color: #777777;
+    font-size: 16px;
+    transition: color 0.2s ease;
 }
 
 .input-wrapper img {
@@ -151,19 +170,25 @@ body {
 .input-wrapper input {
     width: 100%;
     background-color: #181818;
-    border: 1px solid #2A2A2A;
+    border: 1px solid #2a2a2a;
     border-radius: 8px;
     padding: 14px 16px 14px 48px;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 14px;
     outline: none;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
     box-sizing: border-box;
 }
 
 .input-wrapper input:focus {
-    border-color: #FF6B00;
+    border-color: #ff6b00;
+    background-color: #1c1c1c;
     box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.15);
+}
+
+.input-wrapper input:focus + i,
+.input-wrapper:focus-within i:not(.fa-eye):not(.fa-eye-slash) {
+    color: #ff6b00;
 }
 
 .input-wrapper input::placeholder {
@@ -179,6 +204,16 @@ body {
     padding: 0;
     display: flex;
     align-items: center;
+    color: #777777;
+    transition: color 0.2s ease;
+}
+
+.input-wrapper button:hover {
+    color: #ff6b00;
+}
+
+.input-wrapper button i {
+    font-size: 16px;
 }
 
 .input-wrapper button img {
@@ -189,7 +224,7 @@ body {
 
 .password-requirements {
     background-color: #181818;
-    border: 1px solid #2A2A2A;
+    border: 1px solid #2a2a2a;
     border-radius: 8px;
     padding: 16px;
     margin-top: -4px;
@@ -197,7 +232,7 @@ body {
 
 .password-requirements p {
     font-size: 12px;
-    color: #B8B8B8;
+    color: #b8b8b8;
     margin: 0 0 10px 0;
     font-weight: 500;
 }
@@ -217,10 +252,11 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+    transition: color 0.2s ease;
 }
 
 .password-requirements li.valid {
-    color: #22C55E;
+    color: #22c55e;
 }
 
 .form-checkbox {
@@ -231,7 +267,7 @@ body {
 }
 
 .form-checkbox input[type="checkbox"] {
-    accent-color: #FF6B00;
+    accent-color: #ff6b00;
     width: 16px;
     height: 16px;
     margin-top: 2px;
@@ -240,14 +276,15 @@ body {
 
 .form-checkbox label {
     font-size: 13px;
-    color: #B8B8B8;
+    color: #b8b8b8;
     line-height: 1.4;
     cursor: pointer;
 }
 
 .form-checkbox label a {
-    color: #FF6B00;
+    color: #ff6b00;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .form-checkbox label a:hover {
@@ -255,20 +292,25 @@ body {
 }
 
 .cadastro-form button[type="submit"] {
-    background-color: #FF6B00;
-    color: #0A0A0A;
+    background-color: #ff6b00;
+    color: #0a0a0a;
     border: none;
     border-radius: 8px;
     padding: 14px;
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(255, 107, 0, 0.25);
+}
+
+.cadastro-form button[type="submit"] i {
+    font-size: 16px;
 }
 
 .cadastro-form button[type="submit"] img {
@@ -278,7 +320,8 @@ body {
 }
 
 .cadastro-form button[type="submit"]:hover {
-    background-color: #FF8500;
+    background-color: #ff8500;
+    box-shadow: 0 6px 16px rgba(255, 107, 0, 0.35);
 }
 
 .cadastro-form button[type="submit"]:active {
@@ -292,14 +335,15 @@ body {
 
 .login-prompt p {
     font-size: 14px;
-    color: #B8B8B8;
+    color: #b8b8b8;
     margin: 0;
 }
 
 .login-prompt a {
-    color: #FF6B00;
+    color: #ff6b00;
     text-decoration: none;
     font-weight: 700;
+    transition: opacity 0.2s ease;
 }
 
 .login-prompt a:hover {
@@ -315,20 +359,26 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     background-color: #111111;
-    border: 1px solid #2A2A2A;
+    border: 1px solid #2a2a2a;
     border-radius: 16px;
     padding: 32px;
 }
 
 .feature-card {
     background-color: #181818;
-    border: 1px solid #2A2A2A;
+    border: 1px solid #2a2a2a;
     border-radius: 12px;
     padding: 24px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     box-sizing: border-box;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.feature-card:hover {
+    border-color: rgba(255, 107, 0, 0.4);
+    transform: translateY(-2px);
 }
 
 .feature-card img {
@@ -339,14 +389,14 @@ body {
 
 .feature-card h3 {
     font-size: 16px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 0;
     font-weight: 600;
 }
 
 .feature-card p {
     font-size: 13px;
-    color: #B8B8B8;
+    color: #b8b8b8;
     line-height: 1.4;
     margin: 0;
 }
@@ -354,7 +404,7 @@ body {
 .footer {
     background-color: #050505;
     padding: 40px 0;
-    border-top: 1px solid #2A2A2A;
+    border-top: 1px solid #2a2a2a;
     text-align: center;
 }
 
@@ -374,14 +424,14 @@ body {
 .footer-brand .divider {
     width: 40px;
     height: 2px;
-    background-color: #FF6B00;
+    background-color: #ff6b00;
     margin: 4px 0;
     border-radius: 1px;
 }
 
 .footer-brand p {
     font-size: 13px;
-    color: #B8B8B8;
+    color: #b8b8b8;
     margin: 0;
 }
 
