@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAG SmartCare | Serviços</title>
+    <link rel="stylesheet" href="styles/styles/serviços.css">
+    <script src="js/serviços.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="dashboard-body">
+
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <span class="logo-text-primary">AAG</span><span class="logo-text-secondary">SmartCare</span>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="cadastrodeveiculo.html" class="nav-item"><i class="fa-solid fa-house"></i> Início</a></li>
+                <li><a href="meuveiculo.html" class="nav-item"><i class="fa-solid fa-car"></i> Meu veículo</a></li>
+                <li><a href="aag-smartcare.html" class="nav-item active"><i class="fa-solid fa-wrench"></i> Serviços</a>
+                </li>
+                <li><a href="historico.html" class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i>
+                        Histórico</a></li>
+                <li><a href="lembretes.html" class="nav-item"><i class="fa-solid fa-bell"></i> Lembretes</a></li>
+                <li><a href="recomendacoes.html" class="nav-item"><i class="fa-solid fa-lightbulb"></i>
+                        Recomendações</a></li>
+                <li><a href="configuracoes.html" class="nav-item"><i class="fa-solid fa-gear"></i> Configurações</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <p>Tecnologia que mantém você sempre em <strong>movimento.</strong></p>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <div class="topbar-back">
+                <a href="dashboard.html"><i class="fa-solid fa-chevron-left"></i> Voltar para o início</a>
+            </div>
+            <div class="topbar-actions">
+                <button class="icon-btn" aria-label="Notificações"><i class="fa-regular fa-bell"></i></button>
+                <button class="profile-btn" aria-label="Perfil"><i class="fa-regular fa-user"></i></button>
+            </div>
+        </header>
+
+        <div class="content-body">
+            <section class="hero-banner">
+                <div class="hero-banner-content">
+                    <div class="success-icon-wrapper">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <div class="hero-text">
+                        <span class="card-tag">Serviços AAG</span>
+                        <h1>Encontre as soluções ideais para cuidar, manter e personalizar seu veículo.</h1>
+                        <h2>Explore nosso catálogo de serviços especializados e agende o atendimento necessário.</h2>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services-category-section">
+                <div class="category-header">
+                    <h3>Manutenção</h3>
+                    <p>Serviços essenciais para a conservação e funcionamento do veículo.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" data-service="Manutenção básica">
+                        <div class="service-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <div class="service-card-info">
+                            <h4>Manutenção básica</h4>
+                            <p>Verificação geral dos sistemas vitais do veículo.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Agendar</button>
+                    </div>
+
+                    <div class="service-card" data-service="Troca de óleo">
+                        <div class="service-card-icon"><i class="fa-solid fa-oil-can"></i></div>
+                        <div class="service-card-info">
+                            <h4>Troca de óleo</h4>
+                            <p>Substituição do lubrificante do motor e filtro.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Agendar</button>
+                    </div>
+
+                    <div class="service-card" data-service="Filtros">
+                        <div class="service-card-icon"><i class="fa-solid fa-filter"></i></div>
+                        <div class="service-card-info">
+                            <h4>Filtros</h4>
+                            <p>Troca de filtros de ar, combustível e cabine.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Agendar</button>
+                    </div>
+
+                    <div class="service-card" data-service="Freios">
+                        <div class="service-card-icon"><i class="fa-solid fa-compact-disc"></i></div>
+                        <div class="service-card-info">
+                            <h4>Freios</h4>
+                            <p>Inspeção e troca de pastilhas, discos e fluidos.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Agendar</button>
+                    </div>
+
+                    <div class="service-card" data-service="Bateria">
+                        <div class="service-card-icon"><i class="fa-solid fa-car-battery"></i></div>
+                        <div class="service-card-info">
+                            <h4>Bateria</h4>
+                            <p>Teste de carga e substituição de bateria.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Agendar</button>
+                    </div>
+
+                    <div class="service-card" data-service="Diagnóstico">
+                        <div class="service-card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="service-card-info">
+                            <h4>Diagnóstico</h4>
+                            <p>Leitura eletrônica de falhas e parâmetros.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Agendar</button>
+                    </div>
+
+                    <div class="service-card" data-service="Sistema de ignição">
+                        <div class="service-card-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <div class="service-card-info">
+                            <h4>Sistema de ignição</h4>
+                            <p>Verificação e troca de velas e cabos.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Agendar</button>
+                    </div>
+
+                    <div class="service-card" data-service="Serviços elétricos">
+                        <div class="service-card-icon"><i class="fa-solid fa-plug"></i></div>
+                        <div class="service-card-info">
+                            <h4>Serviços elétricos</h4>
+                            <p>Reparos na parte elétrica e chicotes.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Agendar</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services-category-section">
+                <div class="category-header">
+                    <h3>Limpeza</h3>
+                    <p>Cuidados estéticos para manter a conservação interna e externa.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" data-service="Limpeza básica">
+                        <div class="service-card-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+                        <div class="service-card-info">
+                            <h4>Limpeza básica</h4>
+                            <p>Lavagem externa e aspiração interna.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Agendar</button>
+                    </div>
+
+                    <div class="service-card" data-service="Cuidados internos">
+                        <div class="service-card-icon"><i class="fa-solid fa-chair"></i></div>
+                        <div class="service-card-info">
+                            <h4>Cuidados internos</h4>
+                            <p>Higienização de bancos, painel e ar-condicionado.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Agendar</button>
+                    </div>
+
+                    <div class="service-card" data-service="Cuidados externos">
+                        <div class="service-card-icon"><i class="fa-solid fa-car"></i></div>
+                        <div class="service-card-info">
+                            <h4>Cuidados externos</h4>
+                            <p>Polimento, enceramento e proteção de pintura.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Agendar</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services-category-section">
+                <div class="category-header">
+                    <h3>Personalização</h3>
+                    <p>Modificações e acessórios para estética, conforto e desempenho.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" data-service="Envelopamento">
+                        <div class="service-card-icon"><i class="fa-solid fa-palette"></i></div>
+                        <div class="service-card-info">
+                            <h4>Envelopamento</h4>
+                            <p>Aplicação de película de proteção ou mudança de cor.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Avaliar agendamento</button>
+                    </div>
+
+                    <div class="service-card" data-service="Rodas e pneus">
+                        <div class="service-card-icon"><i class="fa-solid fa-circle-notch"></i></div>
+                        <div class="service-card-info">
+                            <h4>Rodas e pneus</h4>
+                            <p>Substituição e alinhamento de conjuntos personalizados.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Avaliar agendamento</button>
+                    </div>
+
+                    <div class="service-card" data-service="Iluminação em LED">
+                        <div class="service-card-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <div class="service-card-info">
+                            <h4>Iluminação em LED</h4>
+                            <p>Upgrade em faróis e lanternas com tecnologia LED.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Avaliar agendamento</button>
+                    </div>
+
+                    <div class="service-card" data-service="Acessórios">
+                        <div class="service-card-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+                        <div class="service-card-info">
+                            <h4>Acessórios</h4>
+                            <p>Instalação de itens de conforto e utilidade.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Avaliar agendamento</button>
+                    </div>
+
+                    <div class="service-card" data-service="Performance">
+                        <div class="service-card-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                        <div class="service-card-info">
+                            <h4>Performance</h4>
+                            <p>Aprimoramentos focados em rendimento dinâmico.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Avaliar agendamento</button>
+                    </div>
+
+                    <div class="service-card" data-service="Escapamento">
+                        <div class="service-card-icon"><i class="fa-solid fa-fire"></i></div>
+                        <div class="service-card-info">
+                            <h4>Escapamento</h4>
+                            <p>Sistemas de exaustão esportivos e ponteiras.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Avaliar agendamento</button>
+                    </div>
+
+                    <div class="service-card" data-service="Suspensão">
+                        <div class="service-card-icon"><i class="fa-solid fa-sliders"></i></div>
+                        <div class="service-card-info">
+                            <h4>Suspensão</h4>
+                            <p>Conjuntos ajustáveis para estabilidade e altura.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Avaliar agendamento</button>
+                    </div>
+
+                    <div class="service-card" data-service="Freios de performance">
+                        <div class="service-card-icon"><i class="fa-solid fa-stop"></i></div>
+                        <div class="service-card-info">
+                            <h4>Freios de performance</h4>
+                            <p>Componentes redutores de espaço de frenagem.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Avaliar agendamento</button>
+                    </div>
+
+                    <div class="service-card" data-service="Admissão de ar">
+                        <div class="service-card-icon"><i class="fa-solid fa-wind"></i></div>
+                        <div class="service-card-info">
+                            <h4>Admissão de ar</h4>
+                            <p>Filtros esportivos e sistemas de indução.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Avaliar agendamento</button>
+                    </div>
+
+                    <div class="service-card" data-service="Remap e calibração eletrônica">
+                        <div class="service-card-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <div class="service-card-info">
+                            <h4>Remap e calibração eletrônica</h4>
+                            <p>Ajustes de mapa de injeção e central.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Avaliar agendamento</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services-category-section">
+                <div class="category-header">
+                    <h3>Reparos especiais</h3>
+                    <p>Soluções direcionadas para demandas específicas do veículo.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" data-service="Reparo específico">
+                        <div class="service-card-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                        <div class="service-card-info">
+                            <h4>Reparos específicos</h4>
+                            <p>Atendimento para necessidades pontuais e corretivas.</p>
+                        </div>
+                        <button type="button" class="btn btn-secondary service-action-btn">Avaliar agendamento</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="service-modal" class="modal-overlay hidden">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modal-title">Detalhes do serviço</h3>
+                <p id="modal-desc">Informações sobre o serviço selecionado.</p>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="btn btn-primary" id="confirm-action-btn">Prosseguir para
+                    agendamento</button>
+                <button type="button" class="btn btn-secondary" id="close-modal-btn">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
