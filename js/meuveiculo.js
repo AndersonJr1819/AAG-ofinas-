@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const savedVehicle = JSON.parse(localStorage.getItem("aag_vehicle")) || {
+  const defaultVehicle = {
     brand: "Toyota",
     model: "Corolla",
     plate: "ABC-1234",
@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
     mileage: "45000"
   };
 
+  let savedVehicle = JSON.parse(localStorage.getItem("aag_vehicle")) || defaultVehicle;
+
   const elBrand = document.getElementById("vehicle-brand");
   const elModel = document.getElementById("vehicle-model");
   const elYear = document.getElementById("vehicle-year");
@@ -15,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const elColor = document.getElementById("vehicle-color");
   const elMileage = document.getElementById("vehicle-mileage");
   const elTitle = document.getElementById("vehicle-display-title");
+  const cardMileageVal = document.getElementById("card-mileage-val");
 
   const editBtn = document.getElementById("edit-vehicle-btn");
   const addServiceBtn = document.getElementById("add-service-btn");
@@ -41,8 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const mileageNum = parseInt(savedVehicle.mileage, 10);
     const formattedMileage = isNaN(mileageNum) ? savedVehicle.mileage : mileageNum.toLocaleString("pt-BR") + " km";
-    if (elMileage) elMileage.textContent = formattedMileage;
     
+    if (elMileage) elMileage.textContent = formattedMileage;
+    if (cardMileageVal) cardMileageVal.textContent = formattedMileage;
     if (elTitle) elTitle.textContent = `${savedVehicle.brand} ${savedVehicle.model}`;
   }
 
@@ -106,7 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       serviceForm.reset();
       serviceModal.classList.add("hidden");
-      alert("Serviço registrado com sucesso!");
     });
   }
 });

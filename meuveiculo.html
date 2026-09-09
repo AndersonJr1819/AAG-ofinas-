@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAG SmartCare | Meu Veículo</title>
+    <link rel="stylesheet" href="styles/styles/meuveiculo.css">
+    <script src="js/meuveiculo.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="dashboard-body">
+
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <span class="logo-text-primary">AAG</span><span class="logo-text-secondary">SmartCare</span>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="cadastrodeveiculo.html" class="nav-item"><i class="fa-solid fa-house"></i> Início</a></li>
+                <li><a href="meu-veiculo.html" class="nav-item active"><i class="fa-solid fa-car"></i> Meu veículo</a>
+                </li>
+                <li><a href="aag-smartcare.html" class="nav-item"><i class="fa-solid fa-wrench"></i> Serviços</a></li>
+                <li><a href="historico.html" class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i>
+                        Histórico</a></li>
+                <li><a href="lembretes.html" class="nav-item"><i class="fa-solid fa-bell"></i> Lembretes</a></li>
+                <li><a href="recomendacoes.html" class="nav-item"><i class="fa-solid fa-lightbulb"></i>
+                        Recomendações</a></li>
+                <li><a href="configuracoes.html" class="nav-item"><i class="fa-solid fa-gear"></i> Configurações</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <p>Tecnologia que mantém você sempre em <strong>movimento.</strong></p>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <div class="topbar-back">
+                <a href="dashboard.html"><i class="fa-solid fa-chevron-left"></i> Voltar para o início</a>
+            </div>
+            <div class="topbar-actions">
+                <button class="icon-btn" aria-label="Notificações"><i class="fa-regular fa-bell"></i></button>
+                <button class="profile-btn" aria-label="Perfil"><i class="fa-regular fa-user"></i></button>
+            </div>
+        </header>
+
+        <div class="content-body">
+            <section class="hero-banner">
+                <div class="hero-banner-content">
+                    <div class="success-icon-wrapper">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+                    <div class="hero-text">
+                        <span class="card-tag">Meu veículo</span>
+                        <h1 id="vehicle-display-title">Toyota Corolla</h1>
+                        <h2>Gerencie as informações e o acompanhamento do seu veículo.</h2>
+                        <div class="vehicle-action-buttons">
+                            <button type="button" class="btn btn-primary" id="edit-vehicle-btn">Editar veículo</button>
+                            <button type="button" class="btn btn-secondary" id="add-service-btn">Adicionar
+                                serviço</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-vehicle-card">
+                    <span class="card-tag">Detalhes principais</span>
+                    <div class="vehicle-specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Marca</span>
+                            <span class="spec-value" id="vehicle-brand">Toyota</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Modelo</span>
+                            <span class="spec-value" id="vehicle-model">Corolla</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Ano</span>
+                            <span class="spec-value" id="vehicle-year">2022</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Placa</span>
+                            <span class="spec-value" id="vehicle-plate">ABC-1234</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Cor</span>
+                            <span class="spec-value" id="vehicle-color">Preto</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Quilometragem</span>
+                            <span class="spec-value" id="vehicle-mileage">45.000 km</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="status-grid-section">
+                <div class="status-card active-card">
+                    <div class="status-card-header">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </div>
+                    <div class="status-card-body">
+                        <span class="status-title">Status do veículo</span>
+                        <h4 class="status-highlight">Em acompanhamento</h4>
+                        <p>Seu veículo está sendo acompanhado pelo AAG SmartCare.</p>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-card-header">
+                        <i class="fa-solid fa-gauge"></i>
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </div>
+                    <div class="status-card-body">
+                        <span class="status-title">Quilometragem</span>
+                        <h4 class="status-highlight" id="card-mileage-val">45.000 km</h4>
+                        <p>Atualizado recentemente pelo cadastro.</p>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-card-header">
+                        <i class="fa-solid fa-wrench"></i>
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </div>
+                    <div class="status-card-body">
+                        <span class="status-title">Último serviço</span>
+                        <h4 class="status-highlight">Nenhum registrado</h4>
+                        <p>Adicione serviços para atualizar o histórico.</p>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-card-header">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </div>
+                    <div class="status-card-body">
+                        <span class="status-title">Próxima manutenção</span>
+                        <h4 class="status-highlight">A definir</h4>
+                        <p>Acompanhe os prazos recomendados.</p>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-card-header">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </div>
+                    <div class="status-card-body">
+                        <span class="status-title">Histórico</span>
+                        <h4 class="status-highlight">Primeiro cadastro</h4>
+                        <p>Dados salvos com sucesso no sistema.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="edit-modal" class="modal-overlay hidden">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Editar veículo</h3>
+                <p>Atualize as informações principais do seu veículo.</p>
+            </div>
+            <form id="edit-vehicle-form">
+                <div class="form-group">
+                    <label for="input-brand">Marca</label>
+                    <input type="text" id="input-brand" required>
+                </div>
+                <div class="form-group">
+                    <label for="input-model">Modelo</label>
+                    <input type="text" id="input-model" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="input-plate">Placa</label>
+                        <input type="text" id="input-plate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-year">Ano</label>
+                        <input type="number" id="input-year" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="input-color">Cor</label>
+                        <input type="text" id="input-color" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-mileage">Quilometragem</label>
+                        <input type="number" id="input-mileage" required>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Salvar alterações</button>
+                    <button type="button" class="btn btn-secondary" id="cancel-edit">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="service-modal" class="modal-overlay hidden">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Adicionar serviço</h3>
+                <p>Registre um novo serviço ou manutenção realizada.</p>
+            </div>
+            <form id="service-form">
+                <div class="form-group">
+                    <label for="service-name">Nome do serviço</label>
+                    <input type="text" id="service-name" placeholder="Ex: Troca de óleo" required>
+                </div>
+                <div class="form-group">
+                    <label for="service-date">Data</label>
+                    <input type="date" id="service-date" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Registrar serviço</button>
+                    <button type="button" class="btn btn-secondary" id="cancel-service">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
