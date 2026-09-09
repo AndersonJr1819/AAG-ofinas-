@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAG SmartCare | Configurações</title>
+    <link rel="stylesheet" href="styles/styles/configuracoes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/configuracoes.js" defer></script>
+</head>
+
+<body class="dashboard-body">
+
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <span class="logo-text-primary">AAG</span><span class="logo-text-secondary">SmartCare</span>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="cadastrodeveiculo.html" class="nav-item"><i class="fa-solid fa-house"></i> Início</a></li>
+                <li><a href="meuveiculo.html" class="nav-item"><i class="fa-solid fa-car"></i> Meu veículo</a></li>
+                <li><a href="serviços.html" class="nav-item"><i class="fa-solid fa-wrench"></i> Serviços</a></li>
+                <li><a href="historico.html" class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i>
+                        Histórico</a></li>
+                <li><a href="lembretes.html" class="nav-item"><i class="fa-solid fa-bell"></i> Lembretes</a></li>
+                <li><a href="recomendacoes.html" class="nav-item"><i class="fa-solid fa-lightbulb"></i>
+                        Recomendações</a></li>
+                <li><a href="configuracoes.html" class="nav-item active"><i class="fa-solid fa-gear"></i>
+                        Configurações</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <p>Tecnologia que mantém você sempre em <strong>movimento.</strong></p>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <div class="topbar-back">
+                <a href="dashboard.html"><i class="fa-solid fa-chevron-left"></i> Voltar para o início</a>
+            </div>
+            <div class="topbar-actions">
+                <button class="icon-btn" aria-label="Notificações"><i class="fa-regular fa-bell"></i></button>
+                <button class="profile-btn" aria-label="Perfil"><i class="fa-regular fa-user"></i></button>
+            </div>
+        </header>
+
+        <div class="content-body">
+            <section class="hero-banner">
+                <div class="hero-banner-content">
+                    <div class="success-icon-wrapper">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div class="hero-text">
+                        <span class="card-tag">Configurações</span>
+                        <h1>Configurações</h1>
+                        <h2>Personalize sua experiência no AAG SmartCare.</h2>
+                    </div>
+                </div>
+                <div class="hero-vehicle-card">
+                    <span class="card-tag">Veículo atual</span>
+                    <div class="vehicle-specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Veículo</span>
+                            <span class="spec-value" id="header-vehicle-name">Corolla</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Marca</span>
+                            <span class="spec-value" id="header-vehicle-brand">Toyota</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Ano</span>
+                            <span class="spec-value" id="header-vehicle-year">2022</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Quilometragem</span>
+                            <span class="spec-value" id="header-vehicle-mileage">45.000 km</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="settings-grid">
+                <section class="history-timeline-section">
+                    <div class="category-header">
+                        <h3>Perfil</h3>
+                        <p>Gerencie suas informações pessoais de acesso.</p>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-info">
+                            <div class="timeline-icon">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                            <div class="timeline-details">
+                                <h4 id="profile-name-display">Usuário SmartCare</h4>
+                                <div class="timeline-meta">
+                                    <span id="profile-email-display"><i class="fa-regular fa-envelope"></i>
+                                        usuario@email.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-actions">
+                            <button type="button" class="action-icon-btn" id="edit-profile-btn"
+                                title="Editar informações">
+                                <i class="fa-regular fa-pen-to-square"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="history-timeline-section">
+                    <div class="category-header">
+                        <h3>Veículo</h3>
+                        <p>Mantenha os dados do seu automóvel atualizados.</p>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-info">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-car"></i>
+                            </div>
+                            <div class="timeline-details">
+                                <h4 id="vehicle-title-display">Toyota Corolla (2022)</h4>
+                                <div class="timeline-meta">
+                                    <span id="vehicle-mileage-display"><i class="fa-solid fa-road"></i> 45.000 km</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-actions">
+                            <button type="button" class="action-icon-btn" id="edit-vehicle-btn"
+                                title="Gerenciar informações do veículo">
+                                <i class="fa-regular fa-pen-to-square"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="history-timeline-section">
+                    <div class="category-header">
+                        <h3>Preferências</h3>
+                        <p>Controle o que deseja exibir no painel principal.</p>
+                    </div>
+                    <div class="timeline-card"
+                        style="flex-direction: column; align-items: stretch; gap: var(--space-16);">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div style="display: flex; align-items: center; gap: var(--space-12);">
+                                <i class="fa-solid fa-lightbulb" style="color: var(--color-primary);"></i>
+                                <span
+                                    style="font-size: var(--font-size-sm); color: var(--color-text); font-weight: var(--font-weight-medium);">Exibir
+                                    recomendações</span>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" id="pref-recommendations" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div style="display: flex; align-items: center; gap: var(--space-12);">
+                                <i class="fa-solid fa-bell" style="color: var(--color-primary);"></i>
+                                <span
+                                    style="font-size: var(--font-size-sm); color: var(--color-text); font-weight: var(--font-weight-medium);">Mostrar
+                                    lembretes</span>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" id="pref-reminders" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div style="display: flex; align-items: center; gap: var(--space-12);">
+                                <i class="fa-solid fa-wrench" style="color: var(--color-primary);"></i>
+                                <span
+                                    style="font-size: var(--font-size-sm); color: var(--color-text); font-weight: var(--font-weight-medium);">Exibir
+                                    informações de manutenção</span>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" id="pref-maintenance" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="history-timeline-section">
+                    <div class="category-header">
+                        <h3>Interface</h3>
+                        <p>Ajustes visuais e de navegação do sistema.</p>
+                    </div>
+                    <div class="timeline-card"
+                        style="flex-direction: column; align-items: stretch; gap: var(--space-16);">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div style="display: flex; align-items: center; gap: var(--space-12);">
+                                <i class="fa-solid fa-palette" style="color: var(--color-primary);"></i>
+                                <span
+                                    style="font-size: var(--font-size-sm); color: var(--color-text); font-weight: var(--font-weight-medium);">Preferências
+                                    de aparência</span>
+                            </div>
+                            <span style="font-size: var(--font-size-xs); color: var(--color-text-muted);">Tema escuro
+                                padrão</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div style="display: flex; align-items: center; gap: var(--space-12);">
+                                <i class="fa-solid fa-compass" style="color: var(--color-primary);"></i>
+                                <span
+                                    style="font-size: var(--font-size-sm); color: var(--color-text); font-weight: var(--font-weight-medium);">Preferências
+                                    de navegação</span>
+                            </div>
+                            <span style="font-size: var(--font-size-xs); color: var(--color-text-muted);">Menu lateral
+                                fixo</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="history-timeline-section">
+                    <div class="category-header">
+                        <h3>Dados</h3>
+                        <p>Gerenciamento do armazenamento local do navegador.</p>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-info">
+                            <div class="timeline-icon"
+                                style="color: #dc3545; background-color: rgba(220, 53, 69, 0.1);">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                            </div>
+                            <div class="timeline-details">
+                                <h4>Limpar dados locais</h4>
+                                <p
+                                    style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-top: 2px;">
+                                    Apaga todos os registros salvos no navegador.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-actions">
+                            <button type="button" class="action-icon-btn" id="clear-data-btn"
+                                title="Limpar dados locais"
+                                style="border-color: rgba(220, 53, 69, 0.3); color: #dc3545;">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-info">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </div>
+                            <div class="timeline-details">
+                                <h4>Restaurar configurações</h4>
+                                <p
+                                    style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-top: 2px;">
+                                    Retorna todas as preferências aos valores originais.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-actions">
+                            <button type="button" class="action-icon-btn" id="restore-settings-btn"
+                                title="Restaurar configurações">
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <div id="settings-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="category-header" style="margin-bottom: var(--space-20);">
+                <h3 id="modal-title">Editar informações</h3>
+                <p id="modal-subtitle">Atualize os dados abaixo.</p>
+            </div>
+            <form id="settings-form" style="display: flex; flex-direction: column; gap: var(--space-16);">
+                <div id="form-fields-container" style="display: flex; flex-direction: column; gap: var(--space-16);">
+                </div>
+                <div
+                    style="display: flex; justify-content: flex-end; gap: var(--space-12); margin-top: var(--space-12);">
+                    <button type="button" class="form-control" id="cancel-modal-btn"
+                        style="width: auto; background-color: transparent; cursor: pointer;">Cancelar</button>
+                    <button type="submit" class="form-control"
+                        style="width: auto; background-color: var(--color-primary); color: #fff; border-color: var(--color-primary); font-weight: var(--font-weight-semibold); cursor: pointer;">Salvar
+                        alterações</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="confirm-modal" class="modal hidden">
+        <div class="modal-content" style="max-width: 420px;">
+            <div class="category-header" style="margin-bottom: var(--space-16);">
+                <h3 id="confirm-title">Confirmação</h3>
+                <p id="confirm-message">Deseja realmente prosseguir com esta ação?</p>
+            </div>
+            <div style="display: flex; justify-content: flex-end; gap: var(--space-12);">
+                <button type="button" class="form-control" id="confirm-cancel-btn"
+                    style="width: auto; background-color: transparent; cursor: pointer;">Cancelar</button>
+                <button type="button" class="form-control" id="confirm-ok-btn"
+                    style="width: auto; background-color: #dc3545; color: #fff; border-color: #dc3545; font-weight: var(--font-weight-semibold); cursor: pointer;">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
