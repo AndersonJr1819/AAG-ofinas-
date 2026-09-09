@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAG SmartCare | Dashboard</title>
+    <link rel="stylesheet" href="styles/styles/cadastrodeveiculo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="dashboard-body">
+
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <span class="logo-text-primary">AAG</span><span class="logo-text-secondary">SmartCare</span>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#inicio" class="nav-item active" data-target="inicio"><i class="fa-solid fa-house"></i>
+                        Início</a></li>
+                <li><a href="#meu-veiculo" class="nav-item" data-target="meu-veiculo"><i class="fa-solid fa-car"></i>
+                        Meu veículo</a></li>
+                <li><a href="aag-smartcare.html" class="nav-item" data-target="servicos"><i
+                            class="fa-solid fa-wrench"></i> Serviços</a></li>
+                <li><a href="#historico" class="nav-item" data-target="historico"><i
+                            class="fa-solid fa-clock-rotate-left"></i> Histórico</a></li>
+                <li><a href="#lembretes" class="nav-item" data-target="lembretes"><i class="fa-solid fa-bell"></i>
+                        Lembretes</a></li>
+                <li><a href="#recomendacoes" class="nav-item" data-target="recomendacoes"><i
+                            class="fa-solid fa-lightbulb"></i> Recomendações</a></li>
+                <li><a href="#configuracoes" class="nav-item" data-target="configuracoes"><i
+                            class="fa-solid fa-gear"></i> Configurações</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <p>Tecnologia que mantém você sempre em <strong>movimento.</strong></p>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <div class="topbar-back">
+                <a href="home.html"><i class="fa-solid fa-chevron-left"></i>Voltar</a>
+            </div>
+            <div class="topbar-actions">
+                <button class="icon-btn" aria-label="Notificações"><i class="fa-regular fa-bell"></i></button>
+                <button class="profile-btn" aria-label="Perfil"><i class="fa-regular fa-user"></i></button>
+            </div>
+        </header>
+
+        <div class="content-body">
+            <section class="hero-banner">
+                <div class="hero-banner-content">
+                    <div class="success-icon-wrapper">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="hero-text">
+                        <h1>Seu veículo foi cadastrado com sucesso!</h1>
+                        <h2>Agora você já pode acompanhar todos os cuidados do seu veículo.</h2>
+                        <p>O AAG SmartCare está em funcionamento e vai te ajudar a manter seu veículo sempre em dia.</p>
+                    </div>
+                </div>
+                <div class="hero-vehicle-card">
+                    <span class="card-tag">Seu veículo</span>
+                    <div class="vehicle-details">
+                        <h3 id="display-vehicle-name">Toyota Corolla</h3>
+                        <div class="vehicle-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Ano</span>
+                                <span class="spec-value" id="display-vehicle-year">2022</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Quilometragem</span>
+                                <span class="spec-value" id="display-vehicle-mileage">45.000 km</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vehicle-image-placeholder">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+                </div>
+            </section>
+
+            <section class="status-grid-section">
+                <div class="status-card active-card">
+                    <div class="status-card-header">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </div>
+                    <div class="status-card-body">
+                        <span class="status-title">Status geral</span>
+                        <h4 class="status-highlight">Em acompanhamento</h4>
+                        <p>Seu veículo está sendo acompanhado pelo AAG SmartCare.</p>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-card-header">
+                        <i class="fa-solid fa-wrench"></i>
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </div>
+                    <div class="status-card-body">
+                        <span class="status-title">Manutenção</span>
+                        <h4 class="status-highlight">Sem informações registradas</h4>
+                        <p>Adicione os serviços realizados para manter seu histórico.</p>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-card-header">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </div>
+                    <div class="status-card-body">
+                        <span class="status-title">Histórico</span>
+                        <h4 class="status-highlight">Primeiro cadastro realizado</h4>
+                        <p>Seu histórico será atualizado conforme os serviços forem realizados.</p>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-card-header">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </div>
+                    <div class="status-card-body">
+                        <span class="status-title">Próxima verificação</span>
+                        <h4 class="status-highlight">A definir</h4>
+                        <p>Cadastre os serviços e mantenha suas manutenções em dia.</p>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-card-header">
+                        <i class="fa-solid fa-sparkles"></i>
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </div>
+                    <div class="status-card-body">
+                        <span class="status-title">Cuidados</span>
+                        <h4 class="status-highlight">Acompanhamento iniciado</h4>
+                        <p>O SmartCare vai te lembrar dos principais cuidados.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard-grid-lower">
+                <div class="maintenance-section">
+                    <div class="section-header-row">
+                        <div class="section-title-wrapper">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <div>
+                                <h3>Próximas manutenções</h3>
+                                <p>Mantenha seu veículo sempre em dia.</p>
+                            </div>
+                        </div>
+                        <button class="btn-text" id="view-all-maintenance">Ver todas <i
+                                class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+
+                    <div class="maintenance-list">
+                        <div class="maintenance-item">
+                            <div class="m-icon"><i class="fa-solid fa-car-burst"></i></div>
+                            <div class="m-info">
+                                <h4>Troca de óleo</h4>
+                                <p>A cada 10.000 km ou 12 meses</p>
+                            </div>
+                            <div class="m-action">
+                                <span class="badge-status">A definir</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="maintenance-item">
+                            <div class="m-icon"><i class="fa-solid fa-file-invoice"></i></div>
+                            <div class="m-info">
+                                <h4>Revisão geral</h4>
+                                <p>A cada 20.000 km ou 24 meses</p>
+                            </div>
+                            <div class="m-action">
+                                <span class="badge-status">A definir</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="maintenance-item">
+                            <div class="m-icon"><i class="fa-solid fa-wind"></i></div>
+                            <div class="m-info">
+                                <h4>Filtro de ar</h4>
+                                <p>A cada 15.000 km ou 12 meses</p>
+                            </div>
+                            <div class="m-action">
+                                <span class="badge-status">A definir</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recommendations-section">
+                    <div class="section-header-row">
+                        <div class="section-title-wrapper">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <div>
+                                <h3>Recomendações</h3>
+                                <p>Dicas para manter seu veículo sempre bem cuidado.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="recommendations-list">
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Mantenha o nível do óleo sempre verificado.</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Verifique a pressão dos pneus regularmente.</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Faça a limpeza do sistema de ar-condicionado.</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Utilize combustível de boa qualidade.</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="bottom-cta-banner">
+                <div class="cta-banner-content">
+                    <div class="cta-icon-wrapper">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="cta-text">
+                        <h3>O primeiro passo já foi dado!</h3>
+                        <p>Agora é com o AAG SmartCare. Continue registrando os serviços e manutenções para manter seu
+                            histórico organizado e seu veículo sempre em dia.</p>
+                    </div>
+                </div>
+                <a href="aag-smartcare.html" class="btn btn-primary">Explorar serviços <i
+                        class="fa-solid fa-chevron-right"></i></a>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>
