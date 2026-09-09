@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAG SmartCare | Histórico</title>
+    <link rel="stylesheet" href="styles/styles/historico.css">
+    <script src="js/historico.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="dashboard-body">
+
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <span class="logo-text-primary">AAG</span><span class="logo-text-secondary">SmartCare</span>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="cadastrodeveiculo.html" class="nav-item"><i class="fa-solid fa-house"></i> Início</a></li>
+                <li><a href="meuveiculo.html" class="nav-item"><i class="fa-solid fa-car"></i> Meu veículo</a></li>
+                <li><a href="serviços.html" class="nav-item"><i class="fa-solid fa-wrench"></i> Serviços</a></li>
+                <li><a href="historico.html" class="nav-item active"><i class="fa-solid fa-clock-rotate-left"></i>
+                        Histórico</a></li>
+                <li><a href="lembretes.html" class="nav-item"><i class="fa-solid fa-bell"></i> Lembretes</a></li>
+                <li><a href="recomendacoes.html" class="nav-item"><i class="fa-solid fa-lightbulb"></i>
+                        Recomendações</a></li>
+                <li><a href="configuracoes.html" class="nav-item"><i class="fa-solid fa-gear"></i> Configurações</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <p>Tecnologia que mantém você sempre em <strong>movimento.</strong></p>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <div class="topbar-back">
+                <a href="dashboard.html"><i class="fa-solid fa-chevron-left"></i> Voltar para o início</a>
+            </div>
+            <div class="topbar-actions">
+                <button class="icon-btn" aria-label="Notificações"><i class="fa-regular fa-bell"></i></button>
+                <button class="profile-btn" aria-label="Perfil"><i class="fa-regular fa-user"></i></button>
+            </div>
+        </header>
+
+        <div class="content-body">
+            <section class="hero-banner">
+                <div class="hero-banner-content">
+                    <div class="success-icon-wrapper">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <div class="hero-text">
+                        <span class="card-tag">Histórico do veículo</span>
+                        <h1>Consulte os serviços e cuidados registrados no seu veículo.</h1>
+                        <h2>Acompanhe a linha do tempo e gerencie todas as manutenções realizadas.</h2>
+                        <div class="vehicle-action-buttons">
+                            <button type="button" class="btn btn-primary" id="add-service-btn">Adicionar
+                                serviço</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-vehicle-card">
+                    <span class="card-tag">Veículo atual</span>
+                    <div class="vehicle-specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Veículo</span>
+                            <span class="spec-value" id="vehicle-model-display">Corolla</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Marca</span>
+                            <span class="spec-value" id="vehicle-brand-display">Toyota</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Ano</span>
+                            <span class="spec-value" id="vehicle-year-display">2022</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Quilometragem</span>
+                            <span class="spec-value" id="vehicle-mileage-display">45.000 km</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="history-controls-section">
+                <div class="filter-group">
+                    <label for="filter-category">Filtrar por categoria</label>
+                    <select id="filter-category" class="form-control">
+                        <option value="todos">Todas as categorias</option>
+                        <option value="Manutenção">Manutenção</option>
+                        <option value="Limpeza">Limpeza</option>
+                        <option value="Diagnóstico">Diagnóstico</option>
+                        <option value="Freios">Freios</option>
+                    </select>
+                </div>
+                <div class="sort-group">
+                    <label for="sort-order">Organizar por</label>
+                    <select id="sort-order" class="form-control">
+                        <option value="recente">Mais recente</option>
+                        <option value="antigo">Mais antigo</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="history-timeline-section">
+                <div class="category-header">
+                    <h3>Linha do tempo de serviços</h3>
+                    <p>Registros oficiais e demonstrativos salvos no sistema.</p>
+                </div>
+                <div id="timeline-container" class="timeline-list">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="service-modal" class="modal-overlay hidden">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modal-main-title">Adicionar serviço</h3>
+                <p id="modal-main-desc">Preencha os dados do serviço realizado.</p>
+            </div>
+            <form id="service-form">
+                <input type="hidden" id="service-index">
+                <div class="form-group">
+                    <label for="input-name">Nome do serviço</label>
+                    <input type="text" id="input-name" required placeholder="Ex: Troca de óleo">
+                </div>
+                <div class="form-group">
+                    <label for="input-category">Categoria</label>
+                    <select id="input-category" class="form-control" required>
+                        <option value="Manutenção">Manutenção</option>
+                        <option value="Limpeza">Limpeza</option>
+                        <option value="Diagnóstico">Diagnóstico</option>
+                        <option value="Freios">Freios</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="input-date">Data</label>
+                        <input type="date" id="input-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-mileage">Quilometragem</label>
+                        <input type="number" id="input-mileage" required placeholder="Ex: 45000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="input-observation">Observação</label>
+                    <textarea id="input-observation" rows="3"
+                        placeholder="Detalhes adicionais sobre o serviço"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" id="save-service-btn">Salvar serviço</button>
+                    <button type="button" class="btn btn-secondary" id="cancel-service-btn">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="detail-modal" class="modal-overlay hidden">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Detalhes do serviço</h3>
+                <p>Informações completas do registro selecionado.</p>
+            </div>
+            <div class="detail-content">
+                <div class="spec-item">
+                    <span class="spec-label">Serviço</span>
+                    <span class="spec-value" id="detail-name">-</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Categoria</span>
+                    <span class="spec-value" id="detail-category">-</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Data</span>
+                    <span class="spec-value" id="detail-date">-</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Quilometragem</span>
+                    <span class="spec-value" id="detail-mileage">-</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Status</span>
+                    <span class="spec-value" id="detail-status">-</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Observação</span>
+                    <span class="spec-value" id="detail-observation">-</span>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary" id="close-detail-btn">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
