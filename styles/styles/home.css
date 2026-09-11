@@ -197,61 +197,6 @@ body {
     object-fit: contain;
 }
 
-.van-showcase {
-    padding: 80px 0;
-    background-color: #0A0A0A;
-}
-
-.van-showcase .container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    background-color: #181818;
-    border: 1px solid #2A2A2A;
-    border-radius: 24px;
-    padding: 48px;
-}
-
-.van-content {
-    flex: 1;
-}
-
-.van-content h2 {
-    text-align: left;
-    margin: 0 0 16px 0;
-    font-size: 32px;
-}
-
-.van-content h2 span {
-    color: #FF6B00;
-}
-
-.van-content p {
-    font-size: 15px;
-    color: #B8B8B8;
-    margin: 0 0 24px 0;
-    line-height: 1.6;
-}
-
-.van-3d-container {
-    flex: 1;
-    min-height: 350px;
-    background-color: #111111;
-    border: 1px dashed #2A2A2A;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.van-3d-container img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-}
-
 .how-it-works {
     padding: 80px 0;
     background-color: #0A0A0A;
@@ -799,10 +744,6 @@ body {
 
     .hero-image {
         justify-content: center;
-    }
-
-    .van-showcase .container {
-        flex-direction: column;
     }
 
     .smartcare .container {
